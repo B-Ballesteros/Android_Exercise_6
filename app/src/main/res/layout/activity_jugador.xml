@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_jugador"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="itesm.mx.m1_jbbm_labo_jugadores.JugadorActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_jugador"
+
+        android:hint="Nombre"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="150dp"
+            android:id="@+id/image_foto"
+
+            android:layout_alignParentStart="false"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/ic_launcher"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button_tomar_foto"
+
+            android:text="Tomar foto"
+            android:layout_alignTop="@+id/textView5"
+            android:layout_toEndOf="@+id/button_guardar_jugador"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button_guardar_jugador"
+
+        android:text="Guardar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</LinearLayout>
